@@ -1,0 +1,148 @@
+#mainboc{
+    width: 100%;
+    height: 750px;
+    margin-top: 320px;
+}
+#sidebar{
+    height: 330px;
+    width: 7%;
+}
+
+    
+    
+    
+
+    
+    
+#sidebar > div{
+    margin-top: 20px;
+    height: 85px;
+    width: 100%;
+    margin-left: 58px;
+}
+    
+
+
+    
+    
+    
+
+#sidebar > div > img{
+    width: 70px;
+    height: 80px;
+}
+#sidebar > button{
+    border: none;
+    margin-top: 30px;
+    margin-left: 60px;
+    
+}
+#sidebar > button:hover{
+    border: 1px solid black;
+}
+#sidedbar{
+    width: 52%;
+    margin-left: 200px;
+    height: 600px ;
+   
+}
+    
+
+
+#sidebar > div > img{
+    margin-top: 30px;
+}
+#sidebar > div > img:hover{
+    border: 1px solid black;
+    
+}
+#sidedbar > img{
+    width: 65%;
+    height: 100%;
+    margin-left: 100px;
+    
+  
+}
+#sideone{
+    height: 700px;
+    width: 30%;
+    
+    margin:  auto;
+    margin-top: -602px;
+    margin-left: 895px;
+    position: absolute;
+}
+#sideone > img{
+    width: 100%;
+}
+#sideone > div{
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;;
+}
+#sideone > div > .onee{
+    text-decoration: underline;
+    color: #003953;
+}
+#sideone > div > .twoo{
+    color: #707474;
+    font-size: small;
+}
+#sidetwoo{
+    margin: auto;
+    width: 100%;
+    height: 110px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+#sidetwoo > div{
+    width: 31%;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    font-size: 13px;
+    
+    color: #888C8C;
+    
+}
+#sidetwoo > div:hover{
+    border: 2px solid rgb(138, 138, 250);
+    
+}
+#sideone > a{
+    color: #3A95CC;
+    font-family: "Open Sans", sans-serif;;
+}
+#sideone div button{
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A7E688;
+    font-weight: bold;
+    cursor: pointer;
+}
+#sideone div h3{
+    font-size: 25px;
+}
+#sideone div #price{
+    color: rgb(255, 51, 51);
+    font-size: 25px;
+}
+#sideone div #size{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding: 10px; */
+}
+#sideone div #size p{
+    text-align: center;
+    padding: 10px;
+}
+#sideone div #size p:hover{
+    border: 1px solid rgb(177, 177, 240);
+}

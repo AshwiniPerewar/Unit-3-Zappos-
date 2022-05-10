@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="html, css bootstrap, mega menu, navbar, large dropdown, menu CSS examples" />
+	<meta name="description" content="Bootstrap 5 navbar megamenu examples with simple css demo code" />  
+
+	<title>Demo - Bootstrap navbar megamenu dropdown. html code example </title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./megamenu.css">
+
+
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        	element.addEventListener('click', function (e) {
+        		e.stopPropagation();
+        	});
+        })
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+</head>
+<body>
+
+
+<div id="megamenu"></div>
+
+	
+
+
+		
+
+
+
+</body>
+</html>
+<script type="module">
+	import megamenu from "./megamenu.js"
+	document.getElementById("megamenu").innerHTML =megamenu()
+</script>

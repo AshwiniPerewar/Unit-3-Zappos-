@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="headfoot.css">
+    <title>Payment Option</title>
+</head>
+<body>
+    <div id="header">
+        <div id="bl">
+            <img src="	https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg">
+        </div>
+        <div>
+            <img src="	https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg">
+        </div>
+    </div>
+    <div id="hee">
+        <div>
+            <select id=seel>
+                <option value="">Customer Service</option>
+                <option value="">Contact Info</option>
+                <option value="">FAQs</option>
+                <option value="">Give Us Feedback</option>
+                </select>
+        </div>
+        <div id="seed">Every Zappos order comes with FAST, FREE Shipping<span>plus a FREE 365-Day Return Policy! </span>
+            <strong>About Shipping & Returns</strong>
+        </div>
+    </div>
+
+    <div id="hmnav">
+        <div id="hmnav1"><a href="loginmodel.html">
+            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg">
+        </a>
+           </div>
+
+        <div id="hmnav2">
+            <h3 style="color:black; font-size: 25px; margin-top: -1px;">Checkout</h3>
+
+        </div>
+    </div>
+    <div id="container">
+        <div id="customer-details">
+            <div id="shipping-address">
+                <h2>1. Shipping Address</h2>        
+                <div id="shipping-info-box"> </div>
+            <div id="payment-method">
+                <h2>2. Payment Method</h2>
+                <h3>Credit/Debit Card</h3>
+                <div id="payment-option">
+                    <input type="text" id="card-name-user" placeholder="Name on Card">
+                    <input type="text"  id="card-number-user" placeholder="Card Number">
+                    <input type="text" id="month-card" placeholder="Month">
+                    <input type="text" id="year-card" placeholder="Year">
+                </div>
+            </div>
+            <div id="item-review-and-shipping">
+                <h2>3. Item Review and Shipping</h2>
+                <div id="items-to-review"></div>
+            </div>
+            <div id="order-total">
+                <h4 id="order-total-value-left">Order Total:</h4>
+            </div>
+            <button id="place-order-btn">PLACE YOUR ORDER</button>
+
+            </div>
+        </div>
+        <div id="order-details">
+            <div>
+                <button id="place-order-btn-right">PLACE YOUR ORDER</button>
+                <p>By placing your order, you agree to zappos.com’s privacy notice and conditions of use.</p>
+            </div>
+            <div id="order-summary">
+                <p id="order-summary-value">Order Summary</p>
+            </div>
+            <div id="subtotal-price">
+                <p >Subtotal:</p>
+                <p id="subtotal-price-value"></p>
+            </div>
+            <div id="shipping-price">
+                <p>Shipping:</p>
+                <p>Free</p>
+            </div>
+            <div id="discount-check">
+                <p>Discounts:</p>
+                <p style="text-align: right;">Auto-applied discounts will appear here once a shipping address is entered</p>
+            </div>
+            <div id="total-price">
+                <p>Total:</p>
+                <p id="total-price-value"></p>
+            </div>
+            <div id="grand-total">
+                <h3 >Order Total:</h3>
+                <p id="order-total-value"></p> 
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="paymentoption.js" type="module"></script>

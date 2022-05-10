@@ -1,0 +1,586 @@
+#main_box{
+    width: 100%;
+    height: 650px;
+   display:flex;
+   position: absolute;
+   margin-top: -60px;
+}
+#main_box > img{
+    width: 100%;
+}
+#main_box > .main_small{
+    height: 220px;
+    width: 350px;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    top: 230px;
+    right: 910px;
+    background-color: white;
+    /* border: 1px solid red; */
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+
+}
+.main_small{
+    padding-top:-50px;
+    /* border:3px solid black; */
+    position: relative;
+}
+#main_box > .main_small > h1{
+    color: black;
+    font-size: 26px;
+    width: 334.54px;
+    
+    font-weight: 450;
+}
+#main_box > .main_small > p{
+    color: #000000;
+    font-size: 20px;
+    width: 350px;
+    
+
+}
+#main_box > .main_small > a {
+    padding: 12px;
+    width: 300px;
+    border: 3px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 12.5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    
+
+    
+
+}
+
+
+#main_box > .main_small > a:hover{
+    background-color: black;
+    color: white;
+}
+#main_two{
+    width: 95%;
+    height: 400px;
+    
+    margin: auto;
+    margin-top: 300px;
+}
+#main_two > .main_twosmall{
+    height: 50px;
+    width: 100%;
+    
+    
+}
+#main_two > .main_twosmall > h1{
+    
+    font-weight: 500;
+    font-size: 25px;
+
+}
+#main_two > .main_thresmall{
+    height: 53%;
+    width: 98%;
+    
+    margin: auto;
+    display: flex;
+    column-gap: 29px;
+}
+
+#main_two > .main_thresmall > div{
+    
+    height: 100%;
+    width: 220px;
+    
+}
+
+#main_two > .main_thresmall > div > img{
+    width: 96%;
+    margin-top: 50px;
+    
+    
+
+}
+
+
+#main_two > .main_foursmall {
+    
+    display: flex;
+    width: 98%;
+    margin: auto;
+   
+}
+#main_two > .main_foursmall > div {
+    height: 60px;
+    width: 220px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+#main_two > .main_foursmall > div > p:hover{
+    text-decoration: underline;
+    color: rgb(62, 62, 247);
+    
+
+}
+
+#second_main{
+    height: 600px;
+    width: 97%;
+    
+    margin-top: -13px;
+    margin: auto;
+}
+#second_main > .second_mainone{
+    height: 450px;
+    width: 100%;
+    column-gap: 16px;
+    display: flex;
+    margin: auto;
+}
+#second_main > .second_mainone > div{
+    height: 100%;
+    width: 33%;
+    
+    margin: auto;
+}
+#second_main > .second_mainone > div > img{
+    width: 100%;
+}
+#second_main > .second_maintwo{
+    height: 150px;
+    width: 100%;
+    
+    display: flex;
+    margin-top: -37px;
+    column-gap: 30px;
+    
+
+}
+#second_main > .second_maintwo > div{
+    height: 100%;
+    width: 33%;
+   
+    margin: auto;
+    
+
+}
+#second_main > .second_maintwo > div > h4{
+    text-align: center;
+    font-size: 20px;
+}
+#second_main > .second_maintwo > div > p{
+    text-align: center;
+    margin-left: 0px;
+    font-size: 15px;
+
+
+}
+
+#second_main > .second_maintwo > div > h3{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 20px;
+
+}
+#second_main > .second_maintwo > div > h3:hover{
+    color: rgb(85, 85, 248);
+}
+#three_main{
+    height: 700px;
+    width: 97%;
+    
+    margin-top: -13px;
+    margin: auto;
+    display: flex;
+    column-gap: 15px;
+}    
+#three_main > div{
+    height: 100%;
+    width: 50%;
+    margin-top: 26px;
+    
+   
+
+}
+#three_main > div > img{
+    width: 100%;
+}
+#three_main > div > .three_img{
+    width: 52%;
+    display: block;
+    margin-top: -500px;
+    margin-left: 150px;
+}
+#three_main > div > p{
+    text-align: center;
+    width: 500px;
+    margin-left: 70px;
+    font-size: 20.5px;
+    
+
+}
+#three_main > div > button{
+    margin-left: 120px;
+    border: 2px solid black;
+    background-color: #F3F76F;
+    padding: 10px;
+    width: 350px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 5px;
+    
+
+
+}
+#three_main > div > button:hover{
+    background-color: black;
+    color: white;
+
+}
+#four_main{
+    height: 500px;
+    width:100%;
+   
+    margin-top: 33px;
+    display: flex;
+}
+#four_main > .four_mainone{
+    height: 50%;
+    width: 30%;
+    
+    margin: auto;
+
+}
+#four_main > .four_mainone > h2{
+    text-align: center;
+
+
+}
+#four_main > .four_mainone > p{
+    text-align: center;
+    width: 350px;
+    margin-left: 25px;
+    font-size: larger;
+
+}
+#four_main > .four_mainone > button{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+#four_main > .four_mainone > button:hover{
+    background-color: black;
+    color: white;
+}
+#four_main > .four_maintwo{
+    height: 100%;
+   
+}
+
+
+/* ap code starts here */
+#ap_container
+{
+    width: 95%;
+    margin: auto;
+}
+
+#ap_popular,#ap_trending,#ap_recent{
+    display: grid;
+    grid-template-columns: repeat(6,0.3fr);
+    font-family: 'Open Sans', sans-serif;
+    gap: 20px;
+}
+#ap_popular>div,#ap_recent>div{
+    width: 100%;
+    height: 400px;
+}
+
+#ap_popular>div>a+a{
+    margin-top: 10px;
+}
+
+.imagebox,.image1,.imagebox1{
+    width: 100%;
+    height: 60%;
+    
+}
+
+#heartdiv
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    
+}
+
+#heartdiv>img{
+    width: 15px;
+    height: 15px;
+}
+
+#heartdiv>p{
+    margin-left: 5px;
+    margin-top: -3px;
+    
+}
+
+.imagebox>img,.imagebox1>img{
+    width: 80%;
+    padding: 20px;
+    margin-top: 30%;
+   
+}
+
+#ap_link+p
+{
+    font-weight: bold;
+}
+#ap_link~p
+{
+    margin-top: -15px;
+}
+
+#ap_link+p+p
+{
+    color: #2c7989;
+}
+
+
+#ap_popular>div>img{
+    width: 100%;
+    
+}
+
+#ap_style
+{
+    margin-top: 60px;
+    height: 460px;
+    display: flex;
+}
+
+#ap_style_image
+{
+    margin-left: -40px;
+    
+}
+#ap_afterpay
+{
+    width: 100%;
+    margin-left: -5px;
+}
+#ap_style_text
+{
+    margin-top: 90px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+#ap_style_text>button{
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#ap_style_text>p{
+    font-size: 20px;
+}
+
+#ap_trendingh_1
+{
+    margin-top: 80px;
+
+}
+#ap_trending
+{
+    margin-top: 30px
+}
+#ap_trending>div
+{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#ap_recenth1,#ap_trendingh_1,#popular_heading,#style_heading
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.image1>img{
+    width: 100%;
+  padding-top: 50%;
+  background-color: transparent;
+}
+
+#ap_trending>div>a
+{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-top: -10px;
+}
+
+#ap_trending>div>a:hover,#ap_link:hover,
+#ap_link+p:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0071b6;
+    
+}
+
+/* shubham kapoor code starts here */
+#shop-dansko{
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+#shop-dansko-left-section{
+    width: 35%;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #1f1f1f;
+    text-align: left;
+}
+#shop-dansko-right-section{
+    width: 65%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 15px;  
+}
+#shop-dansko-button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: white;
+    color: #1f1f1f;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#shop-dansko-button:hover{
+    background-color: #1f1f1f;
+    color: white;
+}
+.dansko-heading-2{
+    width: 80%;
+    line-height: 30px;
+}
+#set-div-item{
+    cursor: pointer;
+}
+#set-tag-heart{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#set-image-product{
+    width: 160px;
+    padding-top: 70px;
+    padding-left: 15px;
+}
+.set-text-product{
+    line-height: 5px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 5px;
+    font-size: 15px;
+}
+#set-rating-product{
+    width: 120px;
+    background-color: white;
+    margin-top: -10px;
+    margin-left: -5px;
+}
+#set-div-image{
+    height: 250px;
+    
+}
+
+/* shubham kapoor code ends here */
+#ap_afterpay
+{
+    margin-left: -3.3%;
+    width: 106.4%;
+    margin-top: 70px;
+}
+#ap_diversity
+{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+#ap_diversity>div{
+    width: 100%;
+    height: 600px;
+}
+
+#ap_diversity>div>img{
+    width: 100%;
+}
+
+#ap_div
+{
+    font-size: 20px;
+}
+#ap_desc
+{
+    font-size: 14px;
+}
+
+#ap_link
+{
+    text-transform: uppercase;
+    color: #003953;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+#heart
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.slideshow-container
+{
+    background-color: #e5f0f7;
+}
+

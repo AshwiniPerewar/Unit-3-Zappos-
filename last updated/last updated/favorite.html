@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f14222d9f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./head&footer.css">
+    <link rel="stylesheet" href="./fav.css">
+    <link rel="stylesheet" href="./cart.css">
+    <!-- <link rel="stylesheet" href="./headfoot.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/dropdown.css">
+    <link rel="stylesheet" href="./styles/ddrop.css"> -->
+    <link rel="stylesheet" href="./megamenu/megamenu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        }); 
+        // DOMContentLoaded  end
+    </script>
+    
+</head>
+<body>
+
+    <div id="header">
+        <div id="bl">
+            <img src="	https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg">
+        </div>
+        <div>
+            <img src="	https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg">
+        </div>
+    </div>
+    <div id="hee">
+        <div>
+            <select id=seel>
+                <option value="">Customer Service</option>
+                <option value="">Contact Info</option>
+                <option value="">FAQs</option>
+                <option value="">Give Us Feedback</option>
+                </select>
+        </div>
+        <div id="seed">Every Zappos order comes with FAST, FREE Shipping<span>plus a FREE 365-Day Return Policy! </span>
+            <strong>About Shipping & Returns</strong>
+        </div>
+    </div>
+   
+    <div id="hmnav">
+        <div id="hmnav1"><a href="loginmodel.html">
+            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg">
+        </a>
+           </div>
+
+        <div id="hmnav2">
+            <div>
+                <input type="text"id="hms" placeholder="Search For Shoes,Clothing,etc.">
+                <button id="hmb">SEARCH</button>
+            </div>
+            <div>
+                <button id="hmb2">View Cart</button>
+               
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+      <div class="ap_checkout">
+    <h1 id="ap_mycart">My Cart</h1>
+    <p id="ap_check">Check out to earn up to $1.15 in VIP points</p>
+    <div id="ap_scroll">
+    <div id="ap_cart"></div>
+    </div>
+    <div id="ap_buttons">
+        <button>VIEW CART</button>
+        <div id="ap_proceed">
+            <p id="ap_total"></p>
+        <button  id="ap_checkout">PROCEED TO CHECKOUT</button>
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="megamenu"></div>
+   
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <marque><q>Be the first to shop the newest home styles—now on Zappos! Shop Home Now</q></marque>
+          
+        </div>
+        
+        <div class="mySlides">
+            <marque> <q>Mother's Day is this Sunday! Shop Mother’s Day Gifts</q></marque>
+          
+        </div>
+        <div class="mySlides">
+            <marque> <q>FREE 365 Day Returns and Exchanges! </q></marque>
+          
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+       
+     <!-- <div id="nav"></div>     -->
+
+    
+</div>
+<div id="ap_fav">
+<h1 id="ap_h1">Hearts</h1>
+    <p id="ap_date"></p>
+    <div id="fav_container"></div>
+    </div>
+<div id="footer"></div>
+
+
+</body>
+</html>
+<script>
+let getMon=(no)=>
+{
+  switch(no)
+  {
+    case 1: return ("Jan");
+            break;
+    case 2: return ("Feb");
+            break; 
+    case 3: return ("Mar");
+            break; 
+    case 4: return ("Apr");
+            break;
+    case 5: return ("May");
+            break;
+    case 6: return ("Jun");
+            break;   
+    case 7: return ("Jul");
+            break;
+    case 8: return ("Aug");
+            break; 
+    case 9: return ("Sep");
+            break; 
+    case 10: return ("Oct");
+            break;
+    case 11: return ("Nov");
+            break;
+    case 12: return ("Dec");
+            break;         
+  }
+}
+    const d = new Date();
+    const month=getMon(d.getUTCMonth());
+    let date=d.getUTCDate();
+    let year=d.getFullYear();
+    document.querySelector("#ap_date").innerText=`${month} ${date} ,${year}`;
+    let data=(JSON.parse(localStorage.getItem("favourites"))||[]);
+   console.log(data);
+   data.forEach(({url,heart,price,likes})=>
+   {
+    let box=document.createElement("div");
+    let img1=document.createElement("img");
+    let heart1=document.createElement("img");
+    let price1=document.createElement("p");
+    let likes1=document.createElement("p");
+    
+    let heartdiv=document.createElement("div");
+    heartdiv.setAttribute("id","heartdiv");
+    
+    img1.src=url;
+    heart1.src=heart;
+    heart1.setAttribute("id","heart");
+    
+    heart1.style.backgroundColor="red";
+    likes1.innerText=likes;
+    price1.innerText=price;
+    
+
+    heartdiv.append(heart1,likes);
+
+    box.append(img1,heartdiv,price1);
+
+    document.querySelector("#fav_container").append(box);
+
+   });
+</script>
+<script type="module">
+    import megamenu from "./megamenu/megamenu.js"
+	document.getElementById("megamenu").innerHTML =megamenu();
+
+
+    
+</script>
+<script type="module">
+
+
+// import megamenu from "./megamenu/megamenu.js"
+// 	document.getElementById("megamenu").innerHTML =megamenu();
+
+  import footer from "./components/footer.js"
+    document.getElementById("footer").innerHTML=footer();
+
+</script>
+<script src="./slideshow.js"></script>
+<script src="./cartdata.js"></script>
+

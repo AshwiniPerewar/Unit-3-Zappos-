@@ -1,0 +1,286 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#container{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 15px;
+    gap:5px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -50px;
+}
+#customer-details{
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    padding-left:30px;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+#order-details{
+    width: 32%;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 20px;
+}
+.adj-para{
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: -7px;
+}
+.adj-para-amz{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: -1px;
+    margin-left: 10px;
+}
+#amazon-pay-btn-img{
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+#amazon-pay-btn{
+    border-radius: 5px;
+    background-color: #f3ce72;
+    border-color: rgb(168, 135, 52);
+    border: 0.5px solid rgb(168, 135, 52);
+    width: 200px;
+}
+#amazon-pay-btn-arrow{
+    width: 15px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+#amazon-pay-btn:hover{
+    background-color:#ddb858; ;
+    cursor: pointer;
+}
+.section-change{
+    display: flex;
+    font-size: 14px;
+}
+.section-change-line{
+    border-bottom: 1px solid #ddd;
+    width: 350px;
+    margin: auto;
+}
+#shipping-address{
+    box-sizing: border-box;
+}
+#shipping-info-box{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0px 10px;
+
+}
+#new-address{
+    border-bottom: 1px solid #ddd;
+    width: 95%;
+    line-height: 45px;
+}
+#city-state-zip{
+    display: flex;
+}
+.input-city-state-set{
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: -6px;
+}
+#country-select{
+    width: 96%;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px;
+    margin-top: -6px;
+}
+.set-input-box{
+    width: 95%;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px;
+    margin-top: -6px;
+
+}
+#productsetting{
+    width: 60px;
+    height: 60px;
+}
+#productsettings{
+    width: 60px;
+    height: 60px;
+}
+#ship-product-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    background-color: #003953;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#ship-product-btn:hover{
+    background-color: #0076bd;
+    cursor: pointer;
+}
+#payment-option{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    background-color: #f5f5f5;
+}
+#items-to-review{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+#place-order-btn{
+    width: 100%;
+    height: 40px;
+    background-color: #003953;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#place-order-btn-right{
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background-color: #003953;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#place-order-btn-right+p{
+    font-size: 13px;
+}
+#order-summary{
+    font-size: 21px;
+}
+#subtotal-price{
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+#shipping-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+#discount-check{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: -5px;
+}
+#total-price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+
+}
+#total-price>p+p{
+    width: 100px;
+    border-top: 1px solid #dddddd;
+}
+#grand-total{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+#grand-total>h3{
+    color: black;
+}
+#grand-total>p{
+    color: black;
+}
+#card-name-user{
+    display: block;
+    width: 95%;
+    margin: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px
+}
+#card-number-user{
+    display: block;
+    width: 95%;
+    margin: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px
+}
+#month-card{
+    width: 45%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px
+}
+#year-card{
+    width: 45%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 5px
+}
+#city-info-user{
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+#set-user-info{
+    display: flex;
+    text-transform: uppercase;
+    margin-top: -20px;
+}
+    
+
+

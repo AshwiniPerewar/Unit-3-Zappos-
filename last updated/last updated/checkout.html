@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="head&footer.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div id="header">
+        <div id="bl">
+            <img src="	https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg">
+        </div>
+        <div>
+            <img src="	https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg">
+        </div>
+    </div>
+    <div id="hee">
+        <div>
+            <select id=seel>
+                <option value="">Customer Service</option>
+                <option value="">Contact Info</option>
+                <option value="">FAQs</option>
+                <option value="">Give Us Feedback</option>
+                </select>
+        </div>
+        <div id="seed">Every Zappos order comes with FAST, FREE Shipping<span>plus a FREE 365-Day Return Policy! </span>
+            <strong>About Shipping & Returns</strong>
+        </div>
+    </div>
+
+    <div id="hmnav">
+        <div id="hmnav1"><a href="loginmodel.html">
+            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg">
+        </a>
+           </div>
+
+        <div id="hmnav2">
+            <h3 style="color:black; font-size: 25px; margin-top: -1px;">Checkout</h3>
+
+        </div>
+    </div>
+    <div id="container">
+        <div id="customer-details">
+            <h2>Express Checkout</h2>
+            <p class="adj-para">Now offering Amazon Pay! Save time by checking out using your saved address and payment method from your Amazon account.</p>
+            <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fyour-account%3Fref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+                <button id="amazon-pay-btn">
+                    <img id="amazon-pay-btn-img" src="https://m.media-amazon.com/images/G/01/AmazonPay/Maxo/logo._CB452516594_.svg" alt="">
+                    <img id="amazon-pay-btn-arrow" src="https://m.media-amazon.com/images/G/01/AmazonPay/Maxo/AmazonPay_button_chevron._CB1558391205_.svg" alt="">
+                </button>
+            </a>
+            <p class="adj-para-amz">USE YOUR AMAZON ACCOUNT</p>
+            <div class="section-change">
+                <div class="section-change-line"></div>
+                <div>OR</div>
+                <div class="section-change-line"></div>
+            </div>
+            <div id="shipping-address">
+                <h2>1. Shipping Address</h2>
+                <div id="shipping-info-box">
+                    <h4 id="new-address">Add a new shipping address</h4>
+                    <form action="" id="address-form">
+                        <p>Country</p>
+                        <select name="" id="country-select" value = "">
+                            <option value="United States">United States</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Micronesia,Federated States of">Micronesia,Federated States of</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                            <option value="Virgin Island U.S.">Virgin Island U.S.</option>
+                        </select>
+                        <p>Full Name</p>
+                        <input type="text" placeholder="First and last Name" class="set-input-box" id="full-name">
+                        <p>Address line 1</p>
+                        <input type="text" placeholder="Street Address,company name,c/o" class="set-input-box" id="address-user">
+                        <p>Address line 2</p>
+                        <input type="text" placeholder="Apartment,suite,unit,building,floor,etc" class="set-input-box">
+                        <div id="city-state-zip">
+                            <div class="city-state">
+                                <p>City</p>
+                                <input type="text" placeholder="eg. Las Vegas" class="input-city-state-set" id="city-user">
+                            </div>
+                            <div class="city-state">
+                                <p>State</p>
+                                <input type="text" placeholder="eg. Nevada" class="input-city-state-set" id="state-user">
+                            </div>
+                            <div class="city-state">
+                                <p>Zip</p>
+                                <input type="text" placeholder="eg. 89101" class="input-city-state-set" id="zip-code-user">
+                            </div>
+                        </div>
+                        <p>Phone Number</p>
+                        <input type="number" placeholder="Including area code" class="input-city-state-set" id="mobile-user" style="display: block; width: 140px;">
+                        <input type="submit" value="SHIP TO THIS ADDRESS" id="ship-product-btn" >
+                    </form>
+                </div>
+            </div>
+            <div id="payment-method">
+                <h2>2. Payment Method</h2>
+                <div id="payment-option">
+                    <p>Please add or select a shipping address to proceed.</p>
+                </div>
+            </div>
+            <div id="item-review-and-shipping">
+                <h2>3. Item Review and Shipping</h2>
+                <div id="items-to-review"></div>
+            </div>
+            <div id="order-total">
+                <h4 id="order-total-value-left">Order Total:</h4>
+            </div>
+            <button id="place-order-btn">PLACE YOUR ORDER</button>
+
+        </div>
+        <div id="order-details">
+            <div>
+                <button id="place-order-btn-right">PLACE YOUR ORDER</button>
+                <p>By placing your order, you agree to zappos.com’s privacy notice and conditions of use.</p>
+            </div>
+            <div id="order-summary">
+                <p id="order-summary-value">Order Summary</p>
+            </div>
+            <div id="subtotal-price">
+                <p >Subtotal:</p>
+                <p id="subtotal-price-value"></p>
+            </div>
+            <div id="shipping-price">
+                <p>Shipping:</p>
+                <p>Free</p>
+            </div>
+            <div id="discount-check">
+                <p>Discounts:</p>
+                <p style="text-align: right;">Auto-applied discounts will appear here once a shipping address is entered</p>
+            </div>
+            <div id="total-price">
+                <p>Total:</p>
+                <p id="total-price-value"></p>
+            </div>
+            <div id="grand-total">
+                <h3>Order Total:</h3>
+                <p id="order-total-value"></p> 
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="checkout.js" type="module"></script>

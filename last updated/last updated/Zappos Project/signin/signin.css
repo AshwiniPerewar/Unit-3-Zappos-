@@ -1,0 +1,66 @@
+#container{
+    width: 23%;
+    height: 450px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+#subDiv{
+    width: 90%;
+    height: 95%;
+    /* border: 1px solid black; */
+   margin: 18px
+}
+#email{
+    margin-top: -38px;
+    width: 98%;
+    height: 25px;
+    color: #3b3b3b;
+}
+#password{
+    width: 98%;
+    height: 25px;
+    margin-top: -38px;
+    color: #3b3b3b;
+}
+#sign_in{
+    width: 100%;
+    height: 30px;
+    background-color: #003953;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#flex2{
+    display: flex;
+    
+}
+#det{
+    margin-left: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#zap{
+    margin-left: 13%;
+}
+#acc{
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid #000000;
+    color: #000000;
+    background-color: white;
+    cursor: pointer;
+}
+img{
+    margin-left: 700px;
+}
+#flex > h4 > h4{
+    color: lightblue;
+    cursor: pointer;
+}

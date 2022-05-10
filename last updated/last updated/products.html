@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_page</title>
+    <script src="https://kit.fontawesome.com/f14222d9f2.js" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="stylesheet" href="./styles/dropdown.css">
+    <link rel="stylesheet" href="./styles/ddrop.css"> -->
+    <link rel="stylesheet" href="./head&footer.css">
+    <link rel="stylesheet" href="./megamenu/megamenu.css">
+    <link rel="stylesheet" href="./cart.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        }); 
+        // DOMContentLoaded  end
+    </script>
+
+	
+
+    <style>
+       
+        #container{
+            display: flex;
+            margin-top: -900px;
+            margin-left: 60px;
+        }
+            
+            
+
+        #shortwo{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            flex: 8;
+            
+            margin-top: 35%;
+        }
+            
+        
+        #shortone{
+            flex: 2;
+            
+            
+        }
+        #shortwo > div > img {
+            height: 300px;
+            width: 140px;
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+            /* transition: background-color 2s ease-out 100ms */
+            
+            
+            
+        }
+        #shortwo > div{
+            width: 50%;
+            height: 50%;
+            background-color: #2197cf;
+        }
+        #shortwo > div > img:hover{
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            
+            
+
+        }
+
+        #shortwo > div >  p{
+            color: blue;
+        } 
+        #shortwo > div >  p:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        #shortwo > div >  p:last-child{
+            color: red;
+        } 
+        #ap_products
+        {
+            margin-left: 40px;
+            width: 190px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-family: "Open Sans", sans-serif;
+            margin-top: 270px;
+            
+            
+        }
+        
+        #ap_h1
+        {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: -250px;
+            
+
+        }
+        #ap_brand::-webkit-scrollbar-thumb:hover{
+            background: #555;
+        }
+        #ap_feedback
+        {
+            color: #2197cf;
+            font-size: 14px;
+            
+        }
+        #ap_products>select
+        {
+            border: none;
+            border-bottom: 0.5px solid black;
+            height: 30px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+        
+        
+        #ap_price>p,#ap_color>p,#ap_brand>p{
+            margin-bottom: -10px;
+            font-size: 14px;
+            
+        
+        
+        }
+        
+        #ap_color>input,#ap_brand>input
+        {
+            height:40px;
+            margin-top: 20px;
+            
+            
+        }
+        
+        .ap_h,.ap_h1
+        {
+            margin-bottom: 30px;
+            font-weight: 600;
+            color:  #1f1f1f;
+            border-bottom: 0.1px solid rgb(156, 151, 151);
+            padding: 10px 0px 10px;
+            
+        }
+        #high_low{
+            position: absolute;
+            width: 18%;
+            left: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+            
+        }
+        #high_low > select {
+            width: 170px;
+            padding: 9px;
+            justify-content: space-between;
+        }
+        .pagination {
+            display: inline-block;
+            align-items: center;
+            margin-left: 70%;
+            
+            
+            
+        }
+        .pagination > h2{
+            margin-left: 9%;
+        }
+        
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .pagination a:hover{
+            color: grey;
+            
+        } 
+        #changekr{
+            row-gap: 20px;
+            justify-content: space-between;
+            column-gap: 30px;
+            gap: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="bl">
+            <img src="	https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.svg">
+        </div>
+        <div>
+            <img src="	https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.svg">
+        </div>
+    </div>
+    <div id="hee">
+        <div>
+            <select id=seel>
+                <option value="">Customer Service</option>
+                <option value="">Contact Info</option>
+                <option value="">FAQs</option>
+                <option value="">Give Us Feedback</option>
+                </select>
+        </div>
+        <div id="seed">Every Zappos order comes with FAST, FREE Shipping<span>plus a FREE 365-Day Return Policy! </span>
+            <strong>About Shipping & Returns</strong>
+        </div>
+    </div>
+   
+    <div id="hmnav">
+        <div id="hmnav1"><a href="loginmodel.html">
+            <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg">
+        </a>
+           </div>
+
+        <div id="hmnav2">
+            <div>
+                <input type="text"id="hms" placeholder="Search For Shoes,Clothing,etc.">
+                <button id="hmb">SEARCH</button>
+            </div>
+            <div>
+                <button id="hmb2">View Cart</button>
+               
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+      <div class="ap_checkout">
+    <h1 id="ap_mycart">My Cart</h1>
+    <p id="ap_check">Check out to earn up to $1.15 in VIP points</p>
+    <div id="ap_scroll">
+    <div id="ap_cart"></div>
+    </div>
+    <div id="ap_buttons">
+        <button>VIEW CART</button>
+        <div id="ap_proceed">
+            <p id="ap_total"></p>
+        <button id="ap_checkout">PROCEED TO CHECKOUT</button>
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div id="megamenu"></div>
+   
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <marque><q>Be the first to shop the newest home styles—now on Zappos! Shop Home Now</q></marque>
+          
+        </div>
+        
+        <div class="mySlides">
+            <marque> <q>Mother's Day is this Sunday! Shop Mother’s Day Gifts</q></marque>
+          
+        </div>
+        <div class="mySlides">
+            <marque> <q>FREE 365 Day Returns and Exchanges! </q></marque>
+          
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+       
+     <!-- <div id="nav"></div>     -->
+
+    
+</div>
+
+
+    
+    <div id="high_low">
+        <p>Sort By</p>
+        <select    name="new arrivals" id="new_arraivals">
+            <option value="new_arrival">New Arrival</option>
+            <option value="low">Low To High</option>
+            <option value="high">High To Low</option>
+        </select>
+        
+    </div>
+    <div id="ap_products">
+        <h1 id="ap_h1">Products</h1>
+        <p>482 Items Found</p>
+        <a id="ap_feedback">Have Feedback?
+        <i class="fa-regular fa-message"></i></a>
+        <select id="ap_gender" name="Gender">
+            <option value="">Gender</option>
+         <option>Women 482</option>
+        </select>
+ 
+        <select id="ap_product_type" name="Product">
+         <option value="">Product Type</option>
+      <option>Clothing(482)</option>
+     </select>
+ 
+     
+     <div id="ap_brand">
+         <p class="ap_h1">Brand</p>
+         <input placeholder="Search Brand">
+         <p><input id="changekr" type="checkbox">1.STATE(4)</p>
+         <p><input id="changekr" type="checkbox">7 For All Mankind(1)</p>
+         <p><input id="changekr" type="checkbox">AllSaints(3)</p>
+         <p><input id="changekr" type="checkbox">America & Beyond(2)</p>   
+         <p><input id="changekr" type="checkbox">Arc'teryx(3)</p>
+         <p><input id="changekr" type="checkbox">ASTR the Label(4)</p>  
+         <p><input id="changekr" type="checkbox">Aventura Clothing(1)</p>
+         
+    </div>
+     <div id="ap_price">
+         <p class="ap_h">Price</p>
+         <p><input id="changekr" type="checkbox">$50.00 and Under(31)</p>
+         <p><input id="changekr" type="checkbox">$100.00 and Under(218)</p>
+         <p><input id="changekr" type="checkbox">$200.00 and Under(432)</p>
+         <p><input id="changekr" type="checkbox">$200.00 and Over(51)</p>
+     </div>
+     
+
+     <div id="ap_color">
+         <p class="ap_h1">Color</p>
+         <input placeholder="Search Color">
+         <p><input id="changekr" value = Black type="checkbox">Black</p>
+         <p><input id="changekr" value = "Peach" type="checkbox">Peach</p>
+         <p><input id="changekr" value="Multi" type="checkbox">multi</p>
+         <p><input id="changekr" value = "White" type="checkbox">white</p>   
+         <p><input id="changekr" value="Yellow" type="checkbox">Yellow</p>
+         <p><input id="changekr" value="Blue" type="checkbox">Blue</p> 
+         <p><input id="changekr" value="Olive" type="checkbox">Olive</p>
+         <p><input id="changekr" value="Army" type="checkbox">Army</p>   
+    </div>
+ 
+    </div>
+    <div id="container">
+
+        
+        <div id="shortone">
+        
+        </div>
+        
+        <div id="shortwo">
+
+        </div>
+
+    </div>
+    
+    <div class="pagination">
+        <h2>Next Products Page</h2>
+
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="products.js"></script>
+
+<script type="module">
+    import megamenu from "./megamenu/megamenu.js"
+	document.getElementById("megamenu").innerHTML =megamenu();
+
+
+ 
+
+
+// import megamenu from "./megamenu/megamenu.js"
+// 	document.getElementById("megamenu").innerHTML =megamenu();
+
+  import footer from "./components/footer.js"
+    document.getElementById("footer").innerHTML=footer();
+
+</script>
+<script src="./slideshow.js"></script>
+<script src="./cartdata.js"></script>
+
+
